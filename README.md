@@ -27,7 +27,7 @@ nohup uvicorn main:app --host 0.0.0.0 --port 8000 > log.txt 2>&1 &
 ```
 
 > [!WARNING]
-> Since we aren't using any encryption, all messages (and even your_api_key) will be readable to anyone who has access to your network.
+> Since we aren't using any encryption, all messages (and even your_api_key) can be readable to anyone in between client and server.
 
 ## Testing
 To test run: 
