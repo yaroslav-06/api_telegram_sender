@@ -1,6 +1,7 @@
+# API Telegram sender Docs
 This is a webserver that allows you to send messages to anybody in telegram from their username (@username).\
 It is built for **LINUX**, but should also work on macos.
-# API Telegram sender Docs
+
 ```bash
 git clone https://github.com/yaroslav-06/api_telegram_sender.git && cd api_telegram_sender
 ```
@@ -24,6 +25,9 @@ To start the server on background run:
 ```bash
 nohup uvicorn main:app --host 0.0.0.0 --port 8000 > log.txt 2>&1 &
 ```
+
+> [!WARNING]
+> Since we aren't using any encryption, all messages (and even your_api_key) will be readable to anyone who has access to your network.
 
 ## Testing
 To test run: 
