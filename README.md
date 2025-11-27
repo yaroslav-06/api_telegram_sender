@@ -26,8 +26,10 @@ nohup uvicorn main:app --host 0.0.0.0 --port 8000 > log.txt 2>&1 &
 ```
 
 ## Testing
-To test open *test.py*, copy and replace _your_api_key_ definition from *main.py*, paste your telegram username (starting with @) into _reciever_username_. Then run:
+To test run: 
 ```bash
 python3 test.py
 ```
+And follow the promt instructions.
+
 It should send 6 messages to you.

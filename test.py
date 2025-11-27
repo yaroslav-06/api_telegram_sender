@@ -1,8 +1,8 @@
 import requests
 import time
 
-your_api_key = 'YOUR_API_KEY' # set to be equal to your_api_key from main.py
-reciever_username = "@parolk06"
+your_api_key = input('enter your api key (from your_api_key variable in main.py): ')
+reciever_username = input("enter username to which you want to send the message: ")
 
 res = requests.post("http://0.0.0.0:8000/send", json={
     "username": reciever_username,
