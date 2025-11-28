@@ -2,11 +2,16 @@
 This is a webserver that allows you to send messages to anybody in telegram from their username (@username).\
 It is built for **LINUX**, but should also work on macos.
 
-```bash
-git clone https://github.com/yaroslav-06/api_telegram_sender.git && cd api_telegram_sender
-```
+>[!Tip]
+>Very convenient to recieve any messages to your smartphone from any code you are running on server or local machine.
+
 ## Setup
 Go to [https://my.telegram.org/](https://my.telegram.org/), login with your telegram accound, and get "App api_id", and "App api_hash".
+
+```bash
+git clone https://github.com/yaroslav-06/api_telegram_sender.git
+cd api_telegram_sender
+```
 
 Open *main.py* file and paste your api id, and api hash in corresponding variables (id as an int, hash as a string).
 Also insert random string into _your_api_key_ variable, this will be your password for future access.
